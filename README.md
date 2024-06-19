@@ -1,7 +1,5 @@
 POO Football
-
-Description
------------
+-------------
 
 Ce projet est une application en PHP orienté objet qui gère des équipes de football. Elle permet de :
 
