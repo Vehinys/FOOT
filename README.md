@@ -5,6 +5,7 @@ Ce projet est une application en PHP orienté objet qui gère des équipes de fo
 
 Elle permet de :
 
+
 Lister toutes les équipes d'un pays.
 
 Lister tous les joueurs d'une équipe (avec nom, prénom, âge et pays d'origine).
