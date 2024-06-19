@@ -1,4 +1,5 @@
 <?php
+
 class Joueur {                                                               // CREE UNE CLASS APPELE "JOUEUR " ET VONT STOCKER LES INFORMATIONS SUR LA CLASS "JOUEUR"
 
     private $prenom;                                                         // PRENOM DU JOUEUR
