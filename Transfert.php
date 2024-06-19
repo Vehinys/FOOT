@@ -1,40 +1,35 @@
 <?php
 
-// DÉBUT DE LA CLASSE TRANSFERT
-class Transfert {
-    // ATTRIBUTS PRIVÉS DE LA CLASSE TRANSFERT
-    private $dateDebut; // DATE DE DÉBUT DU TRANSFERT
-    private $dateFin; // DATE DE FIN DU TRANSFERT (ÉVENTUELLEMENT NULL)
-    private $joueur; // LE JOUEUR CONCERNÉ PAR LE TRANSFERT
-    private $equipe; // L'ÉQUIPE VERS LAQUELLE LE JOUEUR EST TRANSFÉRÉ
+class Transfert {                                                            // CREE UNE CLASS APPELE "TRANSFERT" ET VONT STOCKER LES ATTRIBUTS DANS LA CLASS "TRANSFERT"
 
-    // CONSTRUCTEUR DE LA CLASSE TRANSFERT
-    public function __construct($dateDebut, $dateFin, $joueur, $equipe) {
-        $this->dateDebut = $dateDebut; // INITIALISE LA DATE DE DÉBUT DU TRANSFERT
-        $this->dateFin = $dateFin; // INITIALISE LA DATE DE FIN DU TRANSFERT
-        $this->joueur = $joueur; // INITIALISE LE JOUEUR CONCERNÉ PAR LE TRANSFERT
-        $this->equipe = $equipe; // INITIALISE L'ÉQUIPE VERS LAQUELLE LE JOUEUR EST TRANSFÉRÉ
+    private $dateDebut;                                                      // DATE DE DEBUT DU TRANSFERT
+    private $dateFin;                                                        // DATE DE FIN DU TRANSFERT (EVENTUELLEMENT NULL)
+    private $joueur;                                                         // LE JOUEUR CONCERNE PAR LE TRANSFERT
+    private $equipe;                                                         // L'EQUIPE VERS LAQUELLE LE JOUEUR EST TRANSFERE
 
-        // AJOUTE CE TRANSFERT AU JOUEUR ET À L'ÉQUIPE CONCERNÉS
-        $this->joueur->ajouterTransfert($this);
-        $this->equipe->ajouterTransfert($this);
+                                                                            
+    public function __construct($dateDebut, $dateFin, $joueur, $equipe) {    // CONSTRUCTEUR DE LA CLASSE TRANSFERT
+        $this->dateDebut = $dateDebut;                                       // INITIALISE LA DATE DE DEBUT DU TRANSFERT
+        $this->dateFin = $dateFin;                                           // INITIALISE LA DATE DE FIN DU TRANSFERT
+        $this->joueur = $joueur;                                             // INITIALISE LE JOUEUR CONCERNE PAR LE TRANSFERT
+        $this->equipe = $equipe;                                             // INITIALISE L'EQUIPE VERS LAQUELLE LE JOUEUR EST TRANSFERE
+
+                                                                        
+        $this->joueur->ajouterTransfert($this);                              // AJOUTE CE TRANSFERT AU JOUEUR ET AU JOUEUR CONCERNES
+        $this->equipe->ajouterTransfert($this);                              // AJOUTE CE TRANSFERT AU JOUEUR ET À L'EQUIPE CONCERNES
     }
 
-    // MÉTHODE POUR OBTENIR LA DATE DE DÉBUT DU TRANSFERT
-    public function getDateDebut() {
-        return $this->dateDebut; // RETOURNE LA DATE DE DÉBUT DU TRANSFERT
+    public function getDateDebut() {                                         // METHODE POUR OBTENIR LA DATE DE DEBUT DU TRANSFERT
+        return $this->dateDebut;                                             // RETOURNE LA DATE DE DEBUT DU TRANSFERT
     }
 
-    // MÉTHODE POUR OBTENIR L'ÉQUIPE VERS LAQUELLE LE JOUEUR EST TRANSFÉRÉ
-    public function getEquipe() {
-        return $this->equipe; // RETOURNE L'ÉQUIPE CONCERNÉE PAR LE TRANSFERT
+                                                                            
+    public function getEquipe() {                                            // METHODE POUR OBTENIR L'EQUIPE VERS LAQUELLE LE JOUEUR EST TRANSFERE
+        return $this->equipe;                                                // RETOURNE L'EQUIPE CONCERNÉE PAR LE TRANSFERT
     }
 
-    // MÉTHODE POUR OBTENIR LE JOUEUR CONCERNÉ PAR LE TRANSFERT
-    public function getJoueur() {
-        return $this->joueur; // RETOURNE LE JOUEUR CONCERNÉ PAR LE TRANSFERT
+    public function getJoueur() {                                            // METHODE POUR OBTENIR LE JOUEUR CONCERNE PAR LE TRANSFERT
+        return $this->joueur;                                                // RETOURNE LE JOUEUR CONCERNE PAR LE TRANSFERT
     }
 }
 
-// FIN DE LA CLASSE TRANSFERT
-?>
