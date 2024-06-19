@@ -1,6 +1,5 @@
 <?php
 
-
 class Equipe {                                                                                     // CREE UNE CLASS APPELE "EQUIPE" ET VONT STOCKER LES ATTRIBUTS DANS LA CLASS "EQUIPE"
     private $nom;                                                                                  // LE NOM DE L'EQUIPE
     private $pays;                                                                                 // LE PAYS DE L'EQUIPE
