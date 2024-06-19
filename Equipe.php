@@ -16,7 +16,7 @@ class Equipe {                                                                  
         $this->pays->ajouterEquipe($this);                                                         // AJOUTE LES INFORMATIONS  EQUIPE AU TABLEAU DES EQUIPES DU PAYS
     }
 
-    public function ajouterTransfert($transfert) {                                                 // UNE FONCTION QUI AJOUTE UN TRANSFERT A LA LISTE DES TRANSFERTS
+    public function ajouterTransfert($transfert) {                                                 // METHODE POUR AJOUTER UN TRANSFERT A LA LISTE DES TRANSFERTS
         $this->transferts[] = $transfert;                                                          // AJOUTE LES INFORMATIONS DE TRANSFERT A LA LISTE
     }
                     
